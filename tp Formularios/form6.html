@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="index.js" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Inscripción a curso</legend>
+
+            <label>INGRESE SUS DATOS</label><br>
+
+            <label for="nom">Ingrese su nombre y apellido</label>
+            <input type="text" name="nombreUsuario" id="nom" required><br>
+
+            <label for="edad">Ingrese su Edad</label>
+            <input type="number" name="edadUsuario" id="edad" required><br>
+
+            <label for="cur">¿Qué curso desea hacer?</label>
+            <select name="curs" id="cur">
+              <option value="">Selecciona</option>
+              <option value="web">Programación web</option>
+              <option value="marketing">Marketing Digital</option>
+              <option value="foto">Fotografía Digital</option>
+              <option value="dise">Diseño Gráfico</option>
+              <option value="redes">Redes y Seguridad Informática</option>
+            </select><br>
+
+            <label>¿Qué horario desea?</label><br>
+            <input type="radio" name="turno" value="mñn" id="mañ" checked>
+            <label for="mañ">Mañana</label><br>
+
+            <input type="radio" name="turno" value="tar" id="tarde">
+            <label for="tarde">Tarde</label><br>
+
+            <input type="radio" name="turno" value="noc" id="noche">
+            <label for="noche">Noche</label><br>
+
+            <label>¿Necesita Certificado?</label><br>
+            <input type="checkbox" name="cert" value="acepta" id="cert" checked>
+            <label for="cert">Sí</label><br>
+
+            <input type="checkbox" name="certi" value="noAcepto" id="certi">
+            <label for="certi">No</label><br>
+        </fieldset>
+
+        <input type="submit" name="enviar" value="Inscribirse">
+    </form>
+</body>
+</html>

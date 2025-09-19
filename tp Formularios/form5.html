@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="index.js" enctype="multipart/form-data">
+        <fieldset>
+            <legend>pedidos por web</legend>
+
+            <label>INGRESE SUS DATOS</label><br>
+            <label for="nom">Ingrese su nombre y apellido</label>
+            <input type="text" name="nombreUsuario" id="nom" required ><br>
+            <label for="tel">Ingrese su numero de telefeno</label>
+            <input type="number" name="numUsuario" id="tel" required><br>
+            <label for="dir">Ingrese su Diereccion</label>
+            <input type="text" name="nombreUsuario" id="dir" required ><br>
+
+            <label>Datos del producto</label><br>
+            <label for="ped">Ingrese nombre del producto</label>
+            <input type="text" name="nombreUsuario" id="ped" ><br>
+            <label for="can">Cantidad</label>
+            <input type="number" name="cantidad" id="can" min="1" max="999" required><br>
+  
+            <label>Me dio de entrega</label><br>
+        
+            <input type="radio" name="entrega" value="retiro" id="ret" checked>
+            <label for="ret">Retiro</label><br>
+            <input type="radio" name="entrega" value="env" id="envio">
+            <label for="envio">Envio a domicilio</label> <br>
+
+            
+            <label for="pg">Medio de pago</label>
+               <select name="pago" id="pg">
+                 <option value="">--Seleccione--</option>
+                 <option value="mp">Mercado pago</option>
+                 <option value="efec">Efectivo</option>
+                 <option value="tarc">Tarjeta de credito</option>
+                 <option value="tard">Tarjeta de debito</option>
+              </select>
+
+       </fieldset>
+       <input type="submit" name="enviar" value="Enviar ">
+       <input type="reset" name="borrar" value="Borrar pedido">
+    </form>       
+
+
+
+            
+</body>
+</html>

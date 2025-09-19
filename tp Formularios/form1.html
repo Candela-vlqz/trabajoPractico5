@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="index.js" >
+       <fieldset>
+         <legend>Datos Personales</legend>
+           <label for="nom">Ingrese su Nombre</label><br>
+           <input type="text" name="nombreUsuario" id="nom" required><br>
+           <label for="ape">Ingrese su Apellido</label><br>
+           <input type="text" name="apellido" id="ape" required><br>
+           <label for="edad"> Ingrese su Edad </label><br>
+           <input type="number" name="edadUsuario" id="edad" size="20" maxlength="2" required><br>
+
+           <label for="email" >Ingrese correo</label><br>
+           <input type="email" name="emailUsuario" id="email" required><br>
+
+           <label for="contra">Ingrese Contraseña</label><br>
+           <input type="password"  name="pass" id="contra" size="50" maxlength="7" required><br>
+       </fieldset>
+       <input type="submit" name="regis" value="Registrarse">
+       <input type="reset" name="borrar" value="Borrar datos" >
+
+    </form>
+</body>
+</html>

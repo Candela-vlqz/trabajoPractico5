@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico nº5</title>
+</head>
+<body>
+    <form method="post" action="index.js">
+       <fieldset>
+          <legend>Encuesta sobre musica</legend>
+            <label>GENERO de música</label><br>
+
+            <input type="radio" name="Encuesta" value="rockN" id="rockNacional" checked>
+            <label for="rockNacional">Rock Nacional</label><br>
+            <input type="radio" name="Encuesta" value="PopL" id="pop">
+            <label for="pop">Pop latino</label><br>
+            <input type="radio" name="Encuesta" value="hphp" id="hiphop">
+            <label for="hiphop">Hiphop</label><br>
+            <input type="radio" name="Encuesta" value="otro" id="otrosGeneros">
+            <label for="otrosGeneros">Otros géneros</label><br>
+
+           <label>¿Cuándo preferís escuchar música?</label><br>
+            <input type="checkbox" name="auto" value="si" id="enAuto">
+            <label for="enAuto">En el auto</label><br>
+            <input type="checkbox" name="habitacion" value="si" id="habi">
+            <label for="habi">En mi habitación</label><br>
+            <input type="checkbox" name="caminando" value="si" id="cam">
+            <label for="cam">Mientras camino</label><br>
+            <input type="checkbox" name="otroMomento" value="si" id="otr">
+            <label for="otr">En otros momentos</label><br>
+            <label for="info">¿Qué otros? Menciónalos</label><br>
+              <textarea name="mencion" id="info" cols="25" rows="15">Escriba aqui...</textarea>
+            </fieldset>  
+            <input type="submit" name="enviar" value="enviar">
+    </form>
+</body>
+</html>
